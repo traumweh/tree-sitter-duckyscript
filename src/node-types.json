@@ -1,0 +1,966 @@
+[
+  {
+    "type": "assignment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "binary_expr",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "command",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "func",
+          "named": true
+        },
+        {
+          "type": "function",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "keyseq",
+          "named": true
+        },
+        {
+          "type": "loop",
+          "named": true
+        },
+        {
+          "type": "newline",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bool",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "normal_key",
+          "named": true
+        },
+        {
+          "type": "param",
+          "named": true
+        },
+        {
+          "type": "param_signed",
+          "named": true
+        },
+        {
+          "type": "param_str",
+          "named": true
+        },
+        {
+          "type": "special_key",
+          "named": true
+        },
+        {
+          "type": "str",
+          "named": true
+        },
+        {
+          "type": "swc_key",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "const",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "bool",
+          "named": true
+        },
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "str",
+          "named": true
+        },
+        {
+          "type": "uint",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "expr",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "binary_expr",
+          "named": true
+        },
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "expr",
+          "named": true
+        },
+        {
+          "type": "uint",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "func",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "func",
+          "named": true
+        },
+        {
+          "type": "newline",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "identifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "if",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "expr",
+          "named": true
+        },
+        {
+          "type": "newline",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "keyseq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "normal_key",
+          "named": true
+        },
+        {
+          "type": "special_key",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "loop",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "loop_key",
+          "named": true
+        },
+        {
+          "type": "newline",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "newline",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "param",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "uint",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "param_signed",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "int",
+          "named": true
+        },
+        {
+          "type": "param",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "param_str",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "param_signed",
+          "named": true
+        },
+        {
+          "type": "str",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "special_key",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "swc_key",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "var",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "while",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "expr",
+          "named": true
+        },
+        {
+          "type": "newline",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\n",
+    "named": false
+  },
+  {
+    "type": "\r\n",
+    "named": false
+  },
+  {
+    "type": "!=",
+    "named": false
+  },
+  {
+    "type": "$",
+    "named": false
+  },
+  {
+    "type": "%",
+    "named": false
+  },
+  {
+    "type": "&",
+    "named": false
+  },
+  {
+    "type": "&&",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": "()",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "/",
+    "named": false
+  },
+  {
+    "type": "//",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "<<",
+    "named": false
+  },
+  {
+    "type": "<=",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "==",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": ">=",
+    "named": false
+  },
+  {
+    "type": ">>",
+    "named": false
+  },
+  {
+    "type": "ALT",
+    "named": false
+  },
+  {
+    "type": "BACKSPACE",
+    "named": false
+  },
+  {
+    "type": "BREAK",
+    "named": false
+  },
+  {
+    "type": "CAPSLOCK",
+    "named": false
+  },
+  {
+    "type": "COMMAND",
+    "named": false
+  },
+  {
+    "type": "CONTINUE",
+    "named": false
+  },
+  {
+    "type": "CTRL",
+    "named": false
+  },
+  {
+    "type": "DEFAULTCHARDELAY",
+    "named": false
+  },
+  {
+    "type": "DEFAULTCHARDELAYFUZZ",
+    "named": false
+  },
+  {
+    "type": "DEFAULTDELAY",
+    "named": false
+  },
+  {
+    "type": "DEFINE",
+    "named": false
+  },
+  {
+    "type": "DELAY",
+    "named": false
+  },
+  {
+    "type": "DELETE",
+    "named": false
+  },
+  {
+    "type": "DOWN",
+    "named": false
+  },
+  {
+    "type": "DP_SLEEP",
+    "named": false
+  },
+  {
+    "type": "ELSE",
+    "named": false
+  },
+  {
+    "type": "ELSE IF",
+    "named": false
+  },
+  {
+    "type": "EMUK",
+    "named": false
+  },
+  {
+    "type": "END",
+    "named": false
+  },
+  {
+    "type": "END_FUNCTION",
+    "named": false
+  },
+  {
+    "type": "END_IF",
+    "named": false
+  },
+  {
+    "type": "END_WHILE",
+    "named": false
+  },
+  {
+    "type": "ENTER",
+    "named": false
+  },
+  {
+    "type": "ESC",
+    "named": false
+  },
+  {
+    "type": "FALSE",
+    "named": false
+  },
+  {
+    "type": "FUNCTION",
+    "named": false
+  },
+  {
+    "type": "GOTO_PROFILE",
+    "named": false
+  },
+  {
+    "type": "HOLD",
+    "named": false
+  },
+  {
+    "type": "HOME",
+    "named": false
+  },
+  {
+    "type": "IF",
+    "named": false
+  },
+  {
+    "type": "INSERT",
+    "named": false
+  },
+  {
+    "type": "KEYDOWN",
+    "named": false
+  },
+  {
+    "type": "KEYUP",
+    "named": false
+  },
+  {
+    "type": "KP_ASTERISK",
+    "named": false
+  },
+  {
+    "type": "KP_DOT",
+    "named": false
+  },
+  {
+    "type": "KP_ENTER",
+    "named": false
+  },
+  {
+    "type": "KP_EQUAL",
+    "named": false
+  },
+  {
+    "type": "KP_MINUS",
+    "named": false
+  },
+  {
+    "type": "KP_PLUS",
+    "named": false
+  },
+  {
+    "type": "KP_SLASH",
+    "named": false
+  },
+  {
+    "type": "LBREAK",
+    "named": false
+  },
+  {
+    "type": "LCR",
+    "named": false
+  },
+  {
+    "type": "LEFT",
+    "named": false
+  },
+  {
+    "type": "LMOUSE",
+    "named": false
+  },
+  {
+    "type": "MENU",
+    "named": false
+  },
+  {
+    "type": "MK_MUTE",
+    "named": false
+  },
+  {
+    "type": "MK_NEXT",
+    "named": false
+  },
+  {
+    "type": "MK_PP",
+    "named": false
+  },
+  {
+    "type": "MK_PREV",
+    "named": false
+  },
+  {
+    "type": "MK_STOP",
+    "named": false
+  },
+  {
+    "type": "MK_VOLDOWN",
+    "named": false
+  },
+  {
+    "type": "MK_VOLUP",
+    "named": false
+  },
+  {
+    "type": "MMOUSE",
+    "named": false
+  },
+  {
+    "type": "MOUSE_MOVE",
+    "named": false
+  },
+  {
+    "type": "MOUSE_WHEEL",
+    "named": false
+  },
+  {
+    "type": "NEXT_PROFILE",
+    "named": false
+  },
+  {
+    "type": "NUMLOCK",
+    "named": false
+  },
+  {
+    "type": "OLED_CLEAR",
+    "named": false
+  },
+  {
+    "type": "OLED_CURSOR",
+    "named": false
+  },
+  {
+    "type": "OLED_PRINT",
+    "named": false
+  },
+  {
+    "type": "OLED_RESTORE",
+    "named": false
+  },
+  {
+    "type": "OLED_UPDATE",
+    "named": false
+  },
+  {
+    "type": "OPTION",
+    "named": false
+  },
+  {
+    "type": "PAGEDOWN",
+    "named": false
+  },
+  {
+    "type": "PAGEUP",
+    "named": false
+  },
+  {
+    "type": "PAUSE",
+    "named": false
+  },
+  {
+    "type": "POWER",
+    "named": false
+  },
+  {
+    "type": "PREV_PROFILE",
+    "named": false
+  },
+  {
+    "type": "PRINTSCREEN",
+    "named": false
+  },
+  {
+    "type": "RALT",
+    "named": false
+  },
+  {
+    "type": "RCOMMAND",
+    "named": false
+  },
+  {
+    "type": "RCTRL",
+    "named": false
+  },
+  {
+    "type": "REM",
+    "named": false
+  },
+  {
+    "type": "REPEAT",
+    "named": false
+  },
+  {
+    "type": "RETURN",
+    "named": false
+  },
+  {
+    "type": "RIGHT",
+    "named": false
+  },
+  {
+    "type": "RMOUSE",
+    "named": false
+  },
+  {
+    "type": "ROPTION",
+    "named": false
+  },
+  {
+    "type": "RSHIFT",
+    "named": false
+  },
+  {
+    "type": "RWINDOWS",
+    "named": false
+  },
+  {
+    "type": "SCROLLLOCK",
+    "named": false
+  },
+  {
+    "type": "SHIFT",
+    "named": false
+  },
+  {
+    "type": "SPACE",
+    "named": false
+  },
+  {
+    "type": "STRING",
+    "named": false
+  },
+  {
+    "type": "STRINGLN",
+    "named": false
+  },
+  {
+    "type": "SWCOLOR",
+    "named": false
+  },
+  {
+    "type": "SWC_FILL",
+    "named": false
+  },
+  {
+    "type": "SWC_RESET",
+    "named": false
+  },
+  {
+    "type": "SWC_SET",
+    "named": false
+  },
+  {
+    "type": "TAB",
+    "named": false
+  },
+  {
+    "type": "THEN",
+    "named": false
+  },
+  {
+    "type": "TRUE",
+    "named": false
+  },
+  {
+    "type": "UP",
+    "named": false
+  },
+  {
+    "type": "VAR",
+    "named": false
+  },
+  {
+    "type": "WHILE",
+    "named": false
+  },
+  {
+    "type": "WINDOWS",
+    "named": false
+  },
+  {
+    "type": "^",
+    "named": false
+  },
+  {
+    "type": "int",
+    "named": true
+  },
+  {
+    "type": "loop_key",
+    "named": true
+  },
+  {
+    "type": "normal_key",
+    "named": true
+  },
+  {
+    "type": "str",
+    "named": true
+  },
+  {
+    "type": "uint",
+    "named": true
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "||",
+    "named": false
+  }
+]

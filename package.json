@@ -1,0 +1,38 @@
+{
+  "name": "tree-sitter-duckyscript",
+  "version": "0.1.0",
+  "description": "tree-sitter grammar for duckyscript 3 (DuckyPad flavour)",
+  "main": "bindings/node",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traumweh/tree-sitter-duckyscript.git"
+  },
+  "keywords": [
+    "tree-sitter",
+    "duckyscript",
+    "duckypad",
+    "grammar",
+    "parsing"
+  ],
+  "author": "traumweh",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/traumweh/tree-sitter-duckyscript/issues"
+  },
+  "homepage": "https://traumweh.dev",
+  "dependencies": {
+    "nan": "^2.17.0"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.ds",
+      "file-types": [
+        "ds",
+        "txt"
+      ],
+      "highlights": [
+        "queries/highlights.scm"
+      ]
+    }
+  ]
+}

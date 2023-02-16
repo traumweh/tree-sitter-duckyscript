@@ -1,0 +1,27 @@
+[package]
+name = "tree-sitter-duckyscript"
+description = "tree-sitter grammar for duckyscript 3 (DuckyPad flavour)"
+version = "0.1.0"
+authors = ["traumweh <contact@traumweh.dev>"]
+keywords = ["tree-sitter", "duckyscript", "duckypad", "grammar", "parsing"]
+categories = ["parsing", "text-editors"]
+repository = "https://github.com/traumweh/tree-sitter-duckyscript"
+edition = "2018"
+license = "Apache-2.0"
+
+build = "bindings/rust/build.rs"
+include = [
+  "bindings/rust/*",
+  "grammar.js",
+  "queries/*",
+  "src/*",
+]
+
+[lib]
+path = "bindings/rust/lib.rs"
+
+[dependencies]
+tree-sitter = "~0.20.3"
+
+[build-dependencies]
+cc = "1.0"
