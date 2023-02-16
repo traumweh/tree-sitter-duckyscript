@@ -27,6 +27,7 @@
 "OLED_UPDATE" @function.builtin
 "OLED_RESTORE" @function.builtin
 
+(swc_key) @function.builtin
 "SWCOLOR" @function.builtin
 "SWC_SET" @function.builtin
 "SWC_FILL" @function.builtin
